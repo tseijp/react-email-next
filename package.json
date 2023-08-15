@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node ./modifyHtml.js",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,9 +12,12 @@
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "juice": "^9.1.0",
     "next": "13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^6.0.7",
     "typescript": "5.1.6"
   }
 }
